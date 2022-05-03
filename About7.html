@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <title>
+        </title>
+        <link rel="stylesheet" href="About7.css">
+    </head>
+    <body>
+        <h1>BASIC TOPOLOGIES SUCH AS BUS, RING, STAR, AND HYBRID :-</h1>
+        <br>
+        <br>
+        <h2>BUS TOPOLOGY :-</h2>
+        <p>In BUS topology all stations (Computers, Repeaters, and Bridges etc) are connected to the transmission medium. One large cable acts as a backbone to link all the devices in network. Nodes are connected to the bus cable by drop lines and taps.</p>
+    <p>The interface between the station and the medium is through passive medium interface. This means signal becomes weaker and weaker as it goes through the bus.</p>
+    <img src="bustopology.png" align="right"width="300px" height="200px">
+    <ul><li>In BUS topology the connection is multipoint</li>
+    <li>BUS topology allows unicast, multicast and broadcast addressing</li>
+<li>BUS topology support Baseband and Broadband Transmission</li>
+<li>In a baseband bus topology transmission is bi-directional</li>
+<li><h3>Removing the frame from the BUS:-</h3>Terminators at both end of the BUS do Removal of frame</li>
+<li><h3>Transmission Medium:-</h3>BUS topology uses coaxial cable.</li></ul>
+<br>
+<h3>ADVANTAGES:-</h3>
+<ul><li>BUS toplogy includes ease of installation</li>
+<li>BUS uses less cabiling than mesh, star (or) tree topology.</li></ul>
+<br>
+<h3>DISADVANTAGES:-</h3>
+<ul><li>Difficult reconfiguration and fault isolation</li></ul>
+<br>
+<h3>SOME CHARACTERISTICS OF BUS TOPOLOGY:-</h3>
+<ul><li>The failure of the medium seriously affects the network.</li>
+    <li>Because the interfaces are passive, there malfunctioning does not seriously affect the performance of the network.</li>
+<li>Because the interfaces are passive, there is a limit on the length of the network unless repeators are used.</li>
+<li>The propagation delay is independent of the number of stations on the network.</li></ul>
+<br>
+<h3>APPLICATIONS:-</h3>
+<p>10 Base 5, 10 Base 2, Token Bus (physically topology is Bus, While Logically topology is a ring), DQDB(Distributed Queue Dual Bus). </p>
+<br>
+<br>
+<br>
+<h2>RING TOPOLOGY:-</h2>
+<img src="ringtopology.png" align="right" width="300px"height="200px">
+<p>In Ring topology each device has a dedicated point-to-point configuration only with the two devices on either side of it. A signal is passed along the ring from device to device until it reaches its destination. Each device in the ring incorporates a repeater.</p>
+<h3>ADDRESSING:</h3>
+<p>Ring topology allows unicast, multicast, and broadcast addressing.</p>
+<h3>MEDIUM IN INTERFACE:</h3>
+<p>In Ring topology medium interfaces are active devices, which means that they repeat (regenerate) the signal they receive.</p>
+<h3>POINT-TO-POINT CONNECTION:</h3>
+<ul><li>In a ring topology, the connection between any two medium interfaces is point-to-point.</li>
+    <li>In a ring topology, transmission is unidirectional.</li>
+    <li>In a ring topology, transmission is baseband (digital).</li>
+</ul>
+<h3>TRANSMISSION MEDIUM:</h3>
+<p>A ring topology usually uses guided medium such as twisted pair cable, coaxial cable (or) Fiber optic cable.</p>
+   <h3>REMOVING THE FRAME FROM THE RING:</h3>
+    <p>Frame removal can be done by the destination interface (or) by the source interface.</p>
+    <h3>ADVANTAGES:</h3>		
+    <ul><li>A ring is relatively easy to install and reconfigure.</li>	
+    <li>Fault isolation is simplified.</li></ul>
+    <h3>DISADVANTAGES:	</h3>
+    <ul></li>Unidirectional traffic can be a disadvantage.</li>	
+    <li>In a simple ring, a break in the ring can disable the entire network.</li></ul>
+    <h3>SOME CHARACTERISTICS OF RING TOPOLOGY:</h3>
+    <ul><li>The failure of the medium seriously affects the network.</li>
+    <li>Because the interfaces are active devices, their malfunctioning seriously affects the performance of the network. </li>
+    <li>Because the interfaces are active, there is no limitation on the length of the network.</li>
+    <li>Because each interface creates a delay, the total propagation delay is dependent on the number of stations on the network.</li></ul>
+    <h3>APPLICATIONS:</h3>
+    <p>Token Ring, FDDI</p>
+    <br>
+    <br>
+    <br>
+    <h2>STAR TOPOLOGY:</h2>
+    <img src="startopology.png" align="right" width="300px"height="200px">
+    <p>In a star topology, each station is connected to a central hub. The medium interface can be included in the network interface card and can be part of the station itself. In star topology, the connection between any station and the hub is a point-to-point connection.</p>
+<ul><li>In a star topology transmission is usually unidirectional. </li>
+<li>In a Star topology, transmission can be either baseband (or) Broadband.</li></ul>
+<h3>Passive (or) Active Hub:</h3>
+<p>A hub in a star topology can be either passive (or) Active.</p>
+<h3>HUB (OR) SWITCH:</h3>
+<p>By using Hub the topology is physically a star, but logically a bus. With the use of a switch, only the intended recipient receives a frame sent by a station.</p>
+<h3>Removing the frame from the network:</h3>
+<p>When a station receives a frame, it is automatically removed from the station.</p>
+<h3>Addressing:</h3>
+<p>If the star topology uses a switch, the switch makes the decision. </p>
+<p>If the address is a unicast, the switch sends the frame to only the intended recipient.</p>
+<p>If the address is a multicast, then the frame is send out to several output links. </p>
+<p>If the address is a broadcast, the frame is sent out to all output links.</p>
+<h3>Advantages:</h3>
+<ul><li>Easy to install and reconfigure.</li>		
+<li>Robustness, if one link fails only that link is affected.</li>
+<li>Easy fault identification and fault isolation.</li></ul>
+<h3>Disadvantages:</h3>
+<ul><li>More cabling is required in a star than in some other topologies (ring, Bus).</li></ul>
+<h3>Applications:</h3>
+<p>10BaseT, Fast Ethernet, Gigabit Ethernet, Wireless LAN</p>
+<br>
+<br>
+<h2>COMPLEX TOPOLOGIES:</h2>
+<p>The complex topologies are those topologies that use one or more basic topologies in a network.</p>
+<p>1.Mesh topology    <br>
+    <p>2. Hybrid topology
+        <br>
+        <br>
+<h2>1.MESH TOPOLOGY:</h2>
+	<p>Separate cables are used to connect individual devices on the network. The mesh topology is of two types:</p>
+<p>a)Full-mesh <br>
+   b) Partial-mesh<br>
+   <br>
+
+<h3>a) FULL-MESH:</h3>
+<ul><li>Each device is interconnected with all the devices on the network, by a dedicated cable.</li>
+<li>The term dedicated means that the link carries traffic only between the two devices it connects.</li>
+<li>If one device fails, the data travelling along the network can be routed through another device attached to the active device.</li>
+<li>The number of physical links in a full mesh network with n nodes is n(n-1)/2.</li></ul>
+<br>
+<br>
+<h3>b) PARTIAL-MESH:</h3>
+<img src="meshtopology.png" align="right" width="300px" height="200px">
+<ul><li>Only few devices on the network are interconnected while others are not at all connected.</li>
+<br>
+<br>
+    <h3>Advantages:</h3>
+<p>1.	Avoids traffic problems (each connection carries its own load)</p>
+<p>2.	It is robust, that is, if one link fails, it does not affect the entire system.</p>
+<p>3.	Privacy or security is provided.</p>
+<h3>Disadvantages:</h3>
+<p>1.	As every device must be connected to every other device, more cabling is required.</p>
+<p>2.	Hardware required to connect each link is expensive.</p>
+<h2>2.	HYBRID TOPOLOGY:</h2>
+<img src="hybridtopology.png" align="right" width="300px" height="200px">
+<ul><li>It is a combination of bus, star and ring networks. </li>
+<li>In other words, this topology combines multiple topologies to form a large topology. </li>
+<li>The hybrid topology is widely implemented in WAN.</li>
+<li>However, the connection between the two networks is established using the bus topology.</li>
+<li>In a star bus topology, the star topology of each network is linked to the bus topology.</li>
+<li>If any one of the computer fails on the star topology, it will not affect the entire network.</li>
+<li>However, if the central hub the star topology fails, then the entire network goes down because the cables are connected directly to the central hub of the star network.</li>
+<li>As a result, computers on the network are not able to communicate with each other.</li></ul>
+<br>
+<button><a href="Thankyou.html">DONE</a></button>    
+</body>
+</html>

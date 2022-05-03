@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>About4</title>
+        <link rel="stylesheet" href="About4.css">
+    </head>
+    <body>
+        <h1>OSI REFRENCE MODEL (OSI):-</h1>
+        <br>
+        <p>The OSI Model is based on the proposal developed by the international standards organization (ISO) as a first step towards international standardization of the protocols used in the various layers. </p>
+<p>The ISO OSI Reference Model deals with connecting open systems- that is, systems that are open for communication with other systems. </p>
+<p>Each layer in the sending machine adds its own information to the message it receives from the layer just above it and passes the whole package to the layer just below it. This information is added in the form of headers and trailers.</p>
+<ul><li>Headers are added to the data at layers 6,5,4,3 and 2. </li>
+<li>Trailers are usually added only at layer 2. </li>
+<li>At layer 1 the entire package is converted to a form that can be transferred to the receiving machine. At the receiving machine, the message is unwrapped layer by layer.</li>
+<li>The seven layers can be through as belonging to three groups.</li>
+<li>Layers 1, 2 and 3 are the network support layers; they deal with the physical aspect of moving data from one device to another. </li>
+<li>Layers 7,6 and 5 can be through of as the user support layers; they allow interoperability among unrelated software systems.</li>
+<li>Layer 4, the transport layer, ensures end-to-end reliable data transmission. </li>
+<li>The upper OSI layers are almost always implemented in software; lower layers are a combination of hardware and software, except for the physical layer, which is mostly hardware.</li>
+</ul>
+<img src="osi.png"alt="no image"align="center"width="800px"height="600px">
+<br>
+<br>
+<br>
+<h2>THE PHYSICAL LAYER IS CONCERNED WITH:-</h2>
+<h3>Physical characteristics of interface and media:-</h3><p>The physical layer defines the characteristics of the interface between devices and the transmission media. It also defines the type of transmission medium.</p>
+<h3>Representation of Bits:-</h3><p>To be transmitted bits must be encoded into signal- electrical or optical. The physical later defines the type of encoding (how 0s and 1s are changed to signal)</p>
+<h3>Data rate:-</h3><p>The transmission rate-the number of bits sends each second-is also defined by the physical layer.</p>
+<h3>Line configuration:-</h3><p>The physical layer is concerned with the connection of devices to the medium. The possible line configurations are point-point line configuration and multipoint line configuration.</p>
+<h3>Physical Topology:-</h3><p>The physical topology defines how devices are connected to make a network. Devices can be connected using a mesh, star, ring, bus etc.,</p>
+<h3>Transmission mode:-</h3><p>The physical layer also defines the direction of transmission between two devices: simplex, half-duplex, or full duplex.</p>
+<br>
+<br>
+<br>
+<h2>DATA LINK LAYER:-</h2>
+<p>This layer is responsible for the error-free transfer of data frames. It provides a reliable and efficient communication between two or more devices.</p>
+<h2>IT CONTAINS TWO SUB-LAYERS:-</h2>
+<h3>1.LOGICAL LINK CONTROL LAYER:-</h3><p>It is responsible for transferring the packets to the Network layer of the receiver that is receiving.</p>
+<h3>2.MEDIA ACCESS CONTROL LAYER:-</h3><p>A Media access control layer is a link between the Logical Link Control layer and the network's physical layer. It is used for transferring the packets over the network.</p>
+    <h2>RESPONSIBILITIES OF THE DATA LINK LATER INCLUDE</h2>
+    <h3>Framing:-</h3><p>The data link layer divides the stream of bits received from the network layer into manageable data units called frames.</p>
+    <h3>Physical addressing:-</h3><p>If frames are to be distributed to different systems on the network, the data link layer adds a header to the frame to define the physical address of sender (source address) and receiver (destination address)of the frame.</p>
+    <h3>Flow Control:-</h3><p>If the rate at which the receiver absorbs the data is less than the rate produced in the sender, the data link layer imposes a flow control mechanism to prevent overwhelming the receiver.</p>
+    <h3>Error Control:-</h3><p>The data link layer adds reliability to the physical layer by adding mechanisms to detect and retransmit damaged or lost frames. </p>
+    <h3>Access Control:</h3><p>When two or more devices are connected to the same link, data link protocols are necessary to determine which device has control over the link at any given time.</p>
+    <br>
+    <br>
+    <br>
+<h2>NETWORK LAYER:-</h2>
+<p>The network layer is responsible for the source-to-destination deliver of a packet possibly across multiple networks (links). </p>
+<h2>SPECIFIC RESPONSIBILITY OF THE NETWORK LAYER IS</h2>
+<h3>Logical addressing:-</h3><p>If a packet passes the network boundary, we need another addressing system to help distinguish the source and destination systems. The network layer adds a header to the packet coming from the upper layer that, among other things, includes the logical addresses of the sender and receiver.</p>
+<h3>Routing:-</h3><p>When independent networks or links are connected together to create an internetwork or a large network, the connecting devices route the packets to their final destination. One of the functions of the network layer is to provide this mechanism.</p>
+<p>Congestion control and quality of service are also functions of network layer.</p>
+<br>
+<br>
+<br>
+<h2>TRANSPORT LAYER:-</h2>
+<p>The transport layer is responsible for source-to-destination (end-to-end) delivery of the entire message. </p>
+<h2>SPECIFIC RESPONSIBILITIES OF THE TRANSPORT LAYER INCLUDE</h2>
+<h3>Service-point addressing:-</h3><p>The transport layer header includes a type of address called a service point address (or port address). The network layer gets each packet to the correct computer; the transport layer gets the entire message to the correct process on that computer.</p>
+<h3>Segmentation and reassembly:-</h3><p>A message is divided into transmittable segments, each segment containing a sequence number. These number enable the transport layer to reassemble the message correctly upon arriving at the destination and to identify and replace packets that were lost in the transmission.</p>
+<h3>Connection control:-</h3><p>The transport layer can be either connectionless or connection-oriented. A connectionless transport layer treats each segment as an independent packet and delivers it. A connection-oriented transport layer makes a connection with the destination machine first, after all the data are transferred, the connection is terminated.</p>
+<h3>Flow Control:-<p>Like data link layer, the transport layer is responsible for flow control. However, flow control at this layer is performed end to end rather than across single link. </p>
+<h3>Error Control:-</h3><p>Like data link layer, the transport layer is responsible for error control. However, flow control at this layer is performed end to end rather than across single link.</p>
+<br>
+<br>
+<br>
+<h2>SESSION LAYER:-</h2>
+<p>The session layer is the network dialog controller. It establishes, maintains, and synchronizes the interaction between communicating systems. </p>
+<h2>SPECIFIC RESPONSIBILITY OF THE SESSION LAYER INCLUDE</h2>
+<h3>Dialog control:-</h3><p>The session layer allows two systems to enter into a dialog. It allows the communication between two processes to take place either in half-duplex or full-duplex.</p>
+<h3>Synchronization:-</h3><p>The session layer allows a process to add checkpoints (Synchronization points) into a stream of data. </p>
+<h3>Token Management:-</h3><p>Preventing two parties from attempting the same critical operations at the same time.</p>
+<br>
+<br>
+<h2>PRESENTATION LAYER:-</h2>
+<p>The presentation layer is concerned with the syntax and semantics of the information exchanged between two systems. </p>
+<h2>SPECIFIC RESPONSIBILITIES OF THE PRESENTATION LAYER INCLUDE</h2>
+<h3>Translation:-</h3><p>The information should be changed to bit streams before being transmitted. Because different computers use different encoding systems, the presentation layer at the sender changes the information from its sender-dependent format into a common format.</p>
+<h3>Encryption:-</h3><p>To carry sensitive information, a system must be able to assure privacy, the presentation layer encrypts the data to assure privacy.</p>
+<h3>Compression:-</h3><p>Data compression reduces the number of bits to be transmitted.</p>
+<br>
+<br>
+<h2>APPLICATION LAYER:-</h2>
+<p>The application layer enables the user, whether human or software, to access the network. It provides user interface and support for services such as electronic mail, remote file access and transfer, shared database management, and other types of distributed information services.</p>
+<br>
+<br>
+<button><a href="About5.html"align="center">NEXT</a></button>
+    </body>
+</html>

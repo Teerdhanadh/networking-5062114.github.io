@@ -1,0 +1,14 @@
+body{
+    background-image: url(back.webp);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 95vh;
+}
+
+p{
+    font-size:200px;
+    color:aliceblue;
+    text-align: center;
+    margin-top: 150px;
+}

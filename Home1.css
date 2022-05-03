@@ -1,0 +1,17 @@
+li{
+    font-size:20px;
+    margin-top:60px;
+    color:aliceblue;
+}
+
+body{
+    background-image:url(Home1image.jpg);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+
+a{
+    color:aliceblue;
+}
